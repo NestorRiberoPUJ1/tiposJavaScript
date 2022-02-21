@@ -1,8 +1,38 @@
-var num = 1;
-var float = 1.5;
-var text = "Esta es una variable de texto";
-var bool = false;
+//SUMATORIA
+function sumatoria(array)
+{
+    var result=0;
+    for(var i=0; i< array.length; i++)
+    {
+        result+=array[i];
+    }
+    return result;
+}
 
-var despues;    
+//Mayor
+function mayor(array)
+{
+    var mayor=array[0]
+    for(var i=0; i< array.length; i++)
+    {
+        if(array[i]>mayor)
+        {
+            mayor=array[i];
+        }
+    }
+    return mayor;
+}
 
-console.log(text);
+var Estudiante=
+{
+    "nombre"    :   "Checo",
+    "apellido"  :   "Perez",
+    "edad"      :   25,
+    "hobbies"   :   ["Gestión", "Defensa"],
+    "infoCompleta": function()
+                    {
+                        console.table(this)
+                    }
+}
+
+Estudiante.infoCompleta();
