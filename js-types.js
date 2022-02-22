@@ -35,4 +35,28 @@ var Estudiante=
                     }
 }
 
-Estudiante.infoCompleta();
+function promedio(list)
+{
+    var promedio = 0;
+    for(var i=0; i< list.length; i++)
+    {
+        promedio+=list[i];
+    }
+    promedio=promedio/list.length;
+    return promedio;
+}
+
+function existe(list,item)
+{
+    for(var i=0; i< list.length; i++)
+    {
+        if( list[i]==item)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(promedio([1,2,3]));
+console.log(existe([1,2,3],4));
