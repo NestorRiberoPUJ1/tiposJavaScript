@@ -58,5 +58,35 @@ function existe(list,item)
     return false;
 }
 
-console.log(promedio([1,2,3]));
-console.log(existe([1,2,3],4));
+function encontrarElementos(lista,elemento)
+{
+    var contador=0;
+    var posiciones=[];
+    for(i=0;i<lista.length;i++)
+    {
+        if(lista[i]==elemento)
+        {
+            contador++;
+            posiciones.push(i);
+        }
+    }
+    var obj={
+                "contador":contador,
+                "posiciones": posiciones,
+                "elemento": elemento
+            }
+    return obj;
+}
+//Funciones 2
+var sumatoriaFlecha = (param1,param2) =>param1+param2;
+
+array=[3,4,5,1,2,6,8,9,5];
+array.forEach(function(num,i,arr){
+    //console.log(num);
+    console.log(i);
+    //console.log(arr);
+});
+function imprime(num,posicion, arreglo){
+    console.log(num);
+}
+array.forEach(imprime);
