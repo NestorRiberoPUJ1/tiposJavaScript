@@ -80,6 +80,7 @@ function encontrarElementos(lista,elemento)
 //Funciones 2
 var sumatoriaFlecha = (param1,param2) =>param1+param2;
 
+/*
 array=[3,4,5,1,2,6,8,9,5];
 array.forEach(function(num,i,arr){
     //console.log(num);
@@ -90,3 +91,30 @@ function imprime(num,posicion, arreglo){
     console.log(num);
 }
 array.forEach(imprime);
+*/
+
+function factorial(num)
+{
+    var result=1;
+    for(x=1; x<=num; x++)
+    {
+        result=result*x;
+    }
+    return result;
+}
+
+console.log(factorial(4));
+
+function sumaPositivos(lista)
+{
+    var result=0;
+    lista.forEach(function(num){
+        if(num>0)
+        {
+            result +=num;
+        }
+    });
+    return result;
+}
+
+console.log(sumaPositivos([1,2,3,4,-2,-4,0]));
